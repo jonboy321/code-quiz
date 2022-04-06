@@ -24,7 +24,7 @@ var question5 = document.getElementById("card5");
 
 console.log(question1, question2, question3, question4, question5);
 
-const questions = [
+let questions = [
     {question1,
       correctAnswer: "B."
     },
@@ -45,8 +45,4 @@ const questions = [
       correctAnswer: "A."
     }
   ];
-
-  document.getElementById("startButton").addEventListener("click", function() {
-    var startButton = document.getElementById("startButton");
-    startButton = startButton.classList.add("hide");
-  })
+  console.log(questions);
