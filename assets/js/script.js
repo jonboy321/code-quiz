@@ -1,6 +1,8 @@
 // Starts timer when "Start Quiz" button is clicked.
 document.getElementById("startButton").addEventListener("click", function() {
     var secondsLeft = 75;
+    var startButton = document.getElementById("startButton");
+    startButton = startButton.classList.add("hide");
 
     var timer = setInterval(function functionTimer(){
         document.getElementById("timer").innerHTML = "Timer: " + secondsLeft;
@@ -44,4 +46,7 @@ const questions = [
     }
   ];
 
-  console.log(questions);
+  document.getElementById("startButton").addEventListener("click", function() {
+    var startButton = document.getElementById("startButton");
+    startButton = startButton.classList.add("hide");
+  })
