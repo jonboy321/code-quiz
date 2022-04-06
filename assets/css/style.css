@@ -15,26 +15,44 @@ header {
 }
 
 .containerIntro h1,
-.containerIntro p {
+.containerIntro p,
+.containerIntro li {
     display: inline;
     vertical-align: top;
     line-height: 28px;
     margin-bottom: auto;
 }
 
+.containerIntro h1 {
+    text-align: center;
+    justify-content: center;
+    margin-top: -60px;
+    margin-left: 450px;
+    margin-right: 450px;
+    padding: auto;
+    display: block;
+}
+
 .containerIntro p {
     font-size: 18pt;
     font-weight: bold;
     float: right;
-    margin-top: -1px;
+    margin-top: -30px;
     margin-right: 50px;
+}
+
+.containerIntro li{
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: auto;
 }
 
 .startQuiz h2 {
     text-align: center;
     width: auto;
     margin-top: 75px;
-    margin-left: 100px;
+    margin-left:100px;
     margin-right: 100px;
 
     font-style: italic;
@@ -67,13 +85,17 @@ header {
     border-color: rgb(10, 20, 75);
     border-radius: 10pt;
     color: black;
-    padding-bottom: 10pt;
-    
-    display: block;
+    box-shadow: 0 0 10px 2px;
+
+    padding-bottom: 20pt;
     margin: 300px;
-    text-align: center;
+    text-align: left;
     width: 25%;
 }
+.allCards {
+    display: none;
+}
+
 
 .allCards button {
     display: block;
@@ -90,4 +112,16 @@ header {
 h3 {
     font-size: 20pt;
     font-weight: bolder;
+}
+
+footer {
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    text-shadow: 0 10px 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    margin-bottom: 50px;
 }

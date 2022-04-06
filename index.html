@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz!</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script> src="assets/js/script.js" </script>
 </head>
 
 <body>
     <div class = "containerIntro">
         <header>
+            <ul>
+                <li><a href="#">View Highscores</a></li>
+            </ul>
             <h1>Coding Quiz: Test Your Knowledge!</h1>
-            <p>Timer: 75</p>
+            <p id = "timer">Timer: 75</p>
         </header>
     </div>
     <div class= "startQuiz">
         <h2>You have 75 seconds to complete this five (5) question coding quiz. The faster you complete the 
             quiz, the more points you earn! (Remember: Wrong answers will deduct 10 seconds from the timer.)</h2>
-            <button>Start Quiz!</button>
+            <button id = "startButton">Start Quiz!</button>
     </div>
     <div class= "allCards">
         <section id="card1">
@@ -30,18 +32,18 @@
             <button> D. None of the above </button>
         </section>
         <section id="card2">
-            <h3>2. What does CSS stand for?</h3>
-            <button> A. Converging Script Sources </button>
-            <button> B. Cascading Style Sheets </button>
-            <button> C. Creative Style Selector </button>
+            <h3>2. What type of element uses dot notation?</h3>
+            <button> A. an id </button>
+            <button> B. a button </button>
+            <button> C. a class </button>
             <button> D. None of the above </button>
         </section>
         <section id="card3">
-            <h3>3. What does CSS stand for?</h3>
-            <button> A. Converging Script Sources </button>
-            <button> B. Cascading Style Sheets </button>
-            <button> C. Creative Style Selector </button>
-            <button> D. None of the above </button>
+            <h3>3. Which of the following could we use to hook into an element ID in Javascript?</h3>
+            <button> A. .getElementByID </button>
+            <button> B. .querySelectorAll </button>
+            <button> C. .findElementID </button>
+            <button> D. Both A & B </button>
         </section>
         <section id="card4">
             <h3>4. What does CSS stand for?</h3>
@@ -58,5 +60,9 @@
             <button> D. None of the above </button>
         </section>
     </div>
+    <footer>
+        <h3>Cheaters will be terminated ! ! !</h3>
+    </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
